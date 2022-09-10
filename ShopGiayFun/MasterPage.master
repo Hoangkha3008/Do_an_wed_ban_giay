@@ -1,0 +1,159 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeFile="MasterPage.master.cs" Inherits="MasterPage" %>
+
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <title></title>
+    <link rel="stylesheet" type="text/css" href="css/Main.css" />
+    <asp:ContentPlaceHolder id="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+    <form id="form1" runat="server">
+    <div class="wrapper">
+        <div class="header">
+            <div class="menu">
+                <div class="menu1">
+                    <a class="amenu1" href="TrangChu.aspx"><img src="images/LOGI.png"/></a>
+                </div>
+                <div class="menu2">
+                    <div class="wsmenu">
+                        <ul class="wslist">
+                            <li><a href="TrangChu.aspx">TRANG ChỦ</a></li>
+                            <li><a href="#">GIỚI THIỆU</a></li>
+                            <li><a href="#">CỬA HÀNG</a>
+                                <ul class="sub-menu">
+                                    <li><a href="#">GIÀY NAM</a>
+                                        <ul class="g-nam">
+                                            <li><a href="Nike.aspx">Giày Nike Nam</a></li>
+                                            <li><a href="AdidasN.aspx">Giày Adidas Nam</a></li>
+                                            <li><a href="#">Giày BiTis HunTer Nam</a></li>
+                                            <li><a href="#">Giày Consverse Nam</a></li>
+                                        </ul>
+                                    </li>
+                                    <li><a href="#">GIÀY NỮ</a>
+                                        <ul class="g-nu">
+                                            <li><a href="#">Giày Nike Nữ</a></li>
+                                            <li><a href="BitisNu.aspx">Giày Adidas Nữ</a></li>
+                                            <li><a href="BitisNu.aspx">Giày BiTis HunTer Nữ</a></li>
+                                            <li><a href="#">Giày Consverse Nữ</a></li>
+                                        </ul>
+                                    </li>
+                                    <li><a href="#">KHÁC</a></li>
+                                </ul>
+                            </li>
+                            <li><a href="#">TIN TỨC</a></li>
+                            <li><a href="#">LIÊN HỆ</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="menu3">
+                    <div class="searchFormHeader">
+                        <div class="searchBox">
+                            <input type="hidden" name="type" value="product" aria-autocomplete="none" />
+                            <input autocomplete="off" type="text" name="q" class="searchInput" placeholder="Tìm Kiếm" value="" />
+                            <asp:ImageButton ID="ImageButton1" runat="server" src="images/Nuttim.png" Width="20px" CssClass="button"/> 
+                            <div class="user">
+                                <ul class="sub-menu1">
+                                    <li><a href="#" class="user1"><img src="images/user.png"/></a>
+                                        <ul class="user3">
+                                            <li ><a href="DangNhap.aspx">Đăng Nhập</a></li>
+                                            <li><a href="#">Đăng Ký </a></li>
+                                        </ul>
+                                    </li>
+                                </ul>
+                            </div> 
+                            <div class="user" >
+                                <a href="#" class="user2"><img src="images/giohang.jpg" /></a>
+                            </div>                         
+                        </div>
+                        
+                    </div>
+                </div>
+            </div>
+        </div >
+        <asp:ContentPlaceHolder id="ContentPlaceHolder1" runat="server">
+        </asp:ContentPlaceHolder>
+    </div>
+        <div class="footer" style="background-color:#333333">
+            <div class="container">
+                <div class="col-sm-3">
+                    <div class="navbar-header">
+                        <a  href="#"><img src="images/LOGI.png" /></a>
+                    </div>
+                    <div class="item_block">
+                        <div class="menufooter">
+                            <h4 class="title_menu">VỀ CHÚNG TÔI</h4>
+                            <div class="title1">
+                                <img src="images/dtban.png" />
+                                       1900 1060
+                            </div>
+                            <div class="title1">
+                                <img src="images/icondt.png" />
+                                (+84) 9758 280 77
+                            </div>
+                            <div class="title1">
+                                <img src="images/email.jpg" />
+                                letienhocpy@gmail.com
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-3">
+                    <div class="menuvertical">
+                        <h4 class="title2">Comment FaceBook</h4>
+                        <div class="listmenu">
+                            <div class="listmenu1">
+                            <a href="https://www.facebook.com/saka.nguyen.9210256/"><img  src="images/face.png"/> Replied to HoangKha comment on Tien Hoc public post</a>
+                            </div>
+                            <div class="listmenu1">
+                                <img src="images/adminnn.jpg"  width="40px"/>
+                                <a href="https://www.facebook.com/saka.nguyen.9210256/" class="imglist">Lê Tiến Học</a>
+                            </div>
+                            <div class="listmenu2">
+                                <p>Like about 6 year ago edited</p>
+                            </div>
+                        </div>
+                    </div>                  
+                </div>
+                <div class="col-sm-3">
+                    <div class="item_block">
+                        <div class="menufooter3">
+                            <h4 class="title_menu">Thông Tin</h4>
+                            <div class="list-menu-fy">
+                                <a href="#">Về Chúng Tôi</a>
+                                <a href="#">Tuyển Dụng</a>
+                                <a href="#">Liên Hệ</a>
+                                <a href="#">Tin Tức</a>
+                                <a href="#">Tài Liệu</a>
+                            </div>
+                        </div>
+                    </div>
+                 </div>
+                <div class="col-sm-3">
+                    <div class="item_block">
+                        <div class="menufooter3">
+                            <h4 class="title_menu">Câu Hỏi</h4>
+                            <div class="list-menu-fy">
+                                <a href="#">Chương Trình Ưu Đãi</a>
+                                <a href="#">Chất Lượng Sản Phẩm</a>
+                                <a href="#">Những Vấn Đề Phát Sinh</a>
+                                <a href="#">Lần Đầu Tiên Đặt Hàng</a>
+                                <a href="#">Sản Phẩm</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="bottom-footer">
+            <div class="container">
+                <div class="col-sm-8">
+                    <p class="coppyright"> Copyright by Le Tien Hoc</p>
+                </div>
+            </div>
+        </div>
+    </form>
+</body>
+</html>

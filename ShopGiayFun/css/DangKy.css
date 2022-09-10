@@ -1,0 +1,67 @@
+﻿body {
+    padding:100px;
+    width:100%;
+    min-height:100vh;
+    background-color:#f2f3f5;
+    display:flexbox;
+    flex-item-align:center; 
+    margin-left:310px; 
+}
+.forgot {
+    padding:90px 75px;
+    background-color:#fff;
+    width:100%;
+    max-width:600px;
+    border-radius:30px;
+     
+}
+.forgot-heading {
+    font-size:40px;
+    font-weight:bold;
+    color:#373941;
+    text-align:center;
+    margin-bottom:35px;
+
+}
+.forgot-label {
+    font-size:16px;
+    color:#373941;
+    margin-bottom:10px;
+    display:inline-block;
+}
+.forgot-input {
+    display:block;
+    width:100%;
+    border-radius:20px;
+    background-color:#f2f3f5;
+    outline:none;
+    font-family:'Times New Roman',sans-serif;
+    font-size:20px;
+    margin-bottom:30px;
+}
+
+.signup-dangky {
+    padding:25px;
+    color:white;
+    font-size:18px;
+    text-align:center;
+    border:0;
+    outline:none;
+    display:inline-block;
+    width:100%;
+    border-radius:20px;
+    background-color:#FFD700;
+    font-family:'Times New Roman',sans-serif;
+    cursor:pointer;
+    font-weight:600;
+    box-shadow:0 5px 20px 0px rgba(255,215,0,0.5);
+}
+.signup-account {
+    color:#999;
+    font-size:16px;
+    text-align:center;  
+}
+signup-{
+    color:#2979ff;
+    text-decoration:none;
+}
